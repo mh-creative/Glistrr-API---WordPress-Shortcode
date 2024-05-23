@@ -1,0 +1,95 @@
+/* Add your CSS styles here */
+.event-container {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    background: #fff;
+    overflow: hidden;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.event-container:hover {
+    transform: translate3d(0, -6px, 0);
+}
+.event-content {
+    padding: 20px;
+}
+.event-image {
+    object-fit: fill;
+    height: auto;
+    width: 100%;
+    min-height: 140px;
+    max-height: 200px;
+}
+.event-title {
+    /* Add title styles */
+    font-size: 15px;
+    font-weight: 500;
+    height: 60px;
+}
+.event-date {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.event-description {
+    /* Add description styles */
+    font-size: 1em;
+    margin-bottom: 0 !important;
+}
+.error-message {
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto !important;
+    margin: 0 auto;
+    color: #333;
+}
+#reset-filter {
+    margin: 24px 0px;
+    background: #353533;
+    font-weight: 500;
+}
+.venue-name {
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+}
+.venue-location {
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+}
+.brand-id, .client-id {
+    font-size: 12px;
+    font-weight: 500;
+}
+.no-link-styling a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent */
+    /* Add any other styles you want to modify for links within this container */
+}
+.more-info {
+    background: #353533;
+    text-align: center;
+    padding: 10px;
+    font-weight:500;
+}
+.more-info span {
+    color: #fff;
+}
+select#client-brand-filter {
+    text-align: left !important;
+}
+select#client-id-filter {
+    text-align: left !important;
+}
+#loading-spinner {
+    margin-left: 5px;
+}
