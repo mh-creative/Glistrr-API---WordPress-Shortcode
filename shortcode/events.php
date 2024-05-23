@@ -5,13 +5,13 @@ include_once('includes/api-functions.php');
 include_once('includes/html-functions.php');
 include_once('includes/ajax-functions.php');
 
-wp_enqueue_style('custom-styles', get_stylesheet_directory_uri() . '/shortcode/includes/styles.css');
+wp_enqueue_style('custom-styles', get_stylesheet_directory_uri() . '/shortcode/includes/css/styles.css');
 
 // Enqueue scripts and localize for AJAX
 // Function to enqueue scripts
 function enqueue_scripts() {
     wp_enqueue_script('jquery');
-    wp_enqueue_script('custom-scripts', get_stylesheet_directory_uri() . '/js/event-filter.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('custom-scripts', get_stylesheet_directory_uri() . '/shortcode/includes/js/event-filter.js', array('jquery'), '1.0.0', true);
 
     // Localize the script with data
     wp_localize_script('custom-scripts', 'ajax_object', array(
